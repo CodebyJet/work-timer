@@ -12,7 +12,7 @@
     "react-scripts": "5.0.1",
     "react-slider": "^2.0.6",
     "web-vitals": "^2.1.4",
-    "homepage": "https://github.com/CodebyJet/work-timer"
+    "homepage": "https://codebyjet.github.io/work-timer"
   },
   "scripts": {
     "start": "react-scripts start",
