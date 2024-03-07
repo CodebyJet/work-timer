@@ -5,12 +5,14 @@ import PauseButton from "./PauseButton";
 import SettingsButton from "./SettingsButton";
 import { useContext, useState, useEffect, useRef } from "react";
 import SettingsContext from "./SettingsContext";
+import { useNavigate } from 'react-router-dom';
 
 const red = "#f54e4e";
 const green = "#4aec8c";
 
 function Timer() {
   const settingsInfo = useContext(SettingsContext);
+  const navigate = useNavigate();
 
   const [isPaused, setIsPaused] = useState(true);
   const [mode, setMode] = useState("work"); // work/break/null
@@ -67,6 +69,11 @@ function Timer() {
   let seconds = secondsLeft % 60;
   if (seconds < 10) seconds = "0" + seconds;
 
+
+  const handleSettings = () => {
+    navigate('/settings');
+  };
+
   return (
     <div>
       <CircularProgressbar
@@ -96,7 +103,7 @@ function Timer() {
         )}
       </div>
       <div style={{ marginTop: '20px' }}>
-  <SettingsButton onClick={() => settingsInfo.setShowSettings(true)} />
+  <SettingsButton onClick={handleSettings}  />
 </div>
 
     </div>

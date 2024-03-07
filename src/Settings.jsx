@@ -1,14 +1,21 @@
 import ReactSlider from 'react-slider';
 import './slider.css'
 import SettingsContext from "./SettingsContext";
-import {useContext} from "react";
+import { useContext } from "react";
 import BackButton from "./BackButton";
+import { useNavigate } from 'react-router-dom';
 
 
 function Settings() {
   const settingsInfo = useContext(SettingsContext);
-  return(
-    <div style={{textAlign:'left'}}>
+  const navigate = useNavigate();
+
+  const handleBack = () => {
+    navigate('/');
+  };
+
+  return (
+    <div style={{ textAlign: 'left' }}>
       <label>work: {settingsInfo.workMinutes}:00</label>
       <ReactSlider
         className={'slider'}
@@ -29,10 +36,9 @@ function Settings() {
         min={1}
         max={120}
       />
-      <div style={{textAlign:'center', marginTop:'20px'}}>
-        <BackButton onClick={() => settingsInfo.setShowSettings(false)} />
+      <div style={{ textAlign: 'center', marginTop: '20px' }}>
+        <BackButton onClick={handleBack} />
       </div>
-
     </div>
   );
 }
