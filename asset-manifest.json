@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/work-timer/static/css/main.1d942d8f.css",
-    "main.js": "/work-timer/static/js/main.3e2f03fa.js",
+    "main.js": "/work-timer/static/js/main.a57db08f.js",
     "static/js/453.67bc05c0.chunk.js": "/work-timer/static/js/453.67bc05c0.chunk.js",
     "index.html": "/work-timer/index.html",
     "main.1d942d8f.css.map": "/work-timer/static/css/main.1d942d8f.css.map",
-    "main.3e2f03fa.js.map": "/work-timer/static/js/main.3e2f03fa.js.map",
+    "main.a57db08f.js.map": "/work-timer/static/js/main.a57db08f.js.map",
     "453.67bc05c0.chunk.js.map": "/work-timer/static/js/453.67bc05c0.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1d942d8f.css",
-    "static/js/main.3e2f03fa.js"
+    "static/js/main.a57db08f.js"
   ]
 }
